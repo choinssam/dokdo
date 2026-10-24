@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="noindex" />
+    <script>
+      /* 학교망 예비 주소(2026-10-21). 본 주소가 열리는 망이면 그리로 넘기고, 막힌 망이면 여기서 앱을 연다. 원본 tools/school-copy.mjs */
+      (function () {
+        var l = location, src = "/dokdo/assets/index-B9eLLG1T.js", gone = false;
+        function stay() { if (gone) return; gone = true; var s = document.createElement('script'); s.type = 'module'; s.crossOrigin = ''; s.src = src; document.head.appendChild(s); }
+        if (/[?&]stay\b/.test(l.search) || !window.fetch) return stay();
+        var to = "https://dokdo.choinssam.com" + (l.pathname.replace(/^\/dokdo(?=\/|$)/, '') || '/') + l.search + l.hash;
+        var ctl = window.AbortController ? new AbortController() : null;
+        var timer = setTimeout(function () { if (ctl) ctl.abort(); stay(); }, 3500);
+        fetch("https://dokdo.choinssam.com" + '/cdn-cgi/trace', { cache: 'no-store', signal: ctl ? ctl.signal : undefined })
+          .then(function (r) { return r.ok ? r.text() : Promise.reject(); })
+          .then(function (t) { clearTimeout(timer); if (!gone && /colo=/.test(t)) { gone = true; l.replace(to); } else stay(); })
+          .catch(function () { clearTimeout(timer); stay(); });
+      })();
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>독도 3D 탐험 | 실측 자료로 보는 초등 독도 계기교육</title>
+    <meta name="description" content="실제 측량 자료로 만든 3D 독도를 돌려 보고, 갈매기·강치·독도새우가 되어 섬과 바닷속을 탐험하는 초등 3~6학년 독도의 날(10월 25일) 계기교육 웹앱입니다. 섬 높이와 수심은 국토지리정보원·국립해양조사원 자료를 따릅니다." />
+    <meta name="author" content="초인쌤" />
+    <meta name="theme-color" content="#2b3a47" />
+    <link rel="icon" href="/dokdo/favicon.svg" type="image/svg+xml" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://dokdo.choinssam.com/" />
+    <meta property="og:site_name" content="독도 3D 탐험" />
+    <meta property="og:title" content="독도 3D 탐험" />
+    <meta property="og:description" content="실측 자료로 만든 3D 독도를 갈매기·강치·독도새우가 되어 탐험해요. 초등 3~6학년 독도 계기교육 웹앱." />
+    <meta property="og:image" content="https://dokdo.choinssam.com/og.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="3D 독도 탐험. 괭이갈매기가 바다 위의 서도와 동도를 향해 날아가는 장면" />
+    <meta property="og:locale" content="ko_KR" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "독도 3D 탐험",
+        "url": "https://dokdo.choinssam.com/",
+        "description": "실제 측량 자료로 만든 3D 독도를 돌려 보고, 갈매기·강치·독도새우가 되어 섬과 바닷속을 탐험하는 초등 3~6학년 독도 계기교육 웹앱",
+        "applicationCategory": "EducationalApplication",
+        "operatingSystem": "Web",
+        "inLanguage": "ko",
+        "educationalLevel": "초등학교 3~6학년",
+        "keywords": "독도, 독도의 날, 독도 계기교육, 3D 독도, 독도 지형, 강치, 독도새우, 괭이갈매기, 칙령 제41호",
+        "isAccessibleForFree": true,
+        "author": { "@type": "Person", "name": "초인쌤", "url": "https://choinssam.com/" }
+      }
+    </script>
+    
+    <link rel="stylesheet" crossorigin href="/dokdo/assets/index-B6_yVye9.css">
+  </head>
+  <body>
+    <div id="root"></div>
+    <noscript>
+      <h1>독도 3D 탐험</h1>
+      <p>실제 측량 자료로 만든 3D 독도를 돌려 보며 살펴보는 초등 3~6학년 독도 계기교육 웹앱입니다. 전자칠판, 노트북, 태블릿에서 열립니다. 가입이나 로그인 없이 바로 씁니다.</p>
+      <ul>
+        <li>둘러보기: 동도와 서도를 돌리고 당겨 보며 대한봉(168.5m), 우산봉(98.6m), 천장굴, 물골을 찾아봅니다.</li>
+        <li>갈매기 체험: 괭이갈매기처럼 섬 위를 날며 절벽과 바위섬을 내려다봅니다.</li>
+        <li>강치 체험: 100여 년 전 강치가 살던 옛 독도 바다를 헤엄칩니다. 강치는 마구 잡혀 지금은 사라졌습니다.</li>
+        <li>독도새우 체험: 수심 200~300m 깊은 바다로 내려가 빛이 줄어드는 모습을 봅니다.</li>
+        <li>배로 한 바퀴: 배를 타고 동도·서도 둘레를 돌며 멈추는 곳마다 미션을 찾습니다.</li>
+        <li>우리 땅 근거: 『세종실록』 「지리지」와 대한제국 칙령 제41호 원문에서 독도의 옛 이름을 찾고, 울릉도에서 독도가 보이는 높이를 찾아보고, 3D 독도에서 영토표석을 찾고, 독도 지킴이 약속을 씁니다.</li>
+      </ul>
+      <p>섬 지형과 정사영상은 국토지리정보원, 수심은 국립해양조사원 자료를 썼습니다. 이 앱은 자바스크립트를 켜야 움직입니다. 만든 사람: 초인쌤.</p>
+      <p><a href="/privacy">개인정보 처리방침</a></p>
+    </noscript>
+  </body>
+</html>

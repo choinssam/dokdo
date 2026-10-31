@@ -1,0 +1,88 @@
+{
+ "crs": "EPSG:5188",
+ "source": "국토지리정보원(2025), 1:5,000 수치지형도 37116005의 등고선·표고점·해안선으로 재구성한 지형. 한국해양과학기술원 공식 사진을 바탕으로 표면을 표현함",
+ "short": "섬 형상: 국토지리정보원(2025) · 표면 표현: 한국해양과학기술원 공식 사진 기반",
+ "license": "국토지리정보원 국토정보플랫폼에서 교육용(비영리)으로 받아 화면용으로 줄여 씀(높이 2m 격자, 사진 0.4m). 「공간정보의 구축 및 관리 등에 관한 법률」 등 관련 법령을 지키며 원본은 나누지 않습니다",
+ "kind": "gltf",
+ "heightmap": {
+  "url": "terrain/height.f32",
+  "cols": 535,
+  "rows": 570,
+  "minE": 276400,
+  "maxN": 516890,
+  "cell": 2,
+  "nodata": -9999,
+  "made": "tools/ngii/build_terrain.py: 등고선 5m(주곡선·계곡선)·표고점 182·기준점 4·해안선 0m -> 들로네 삼각망 -> 격자 가운데 값. 해안선 바로 밖 한 칸은 -3m, 그 밖은 자료 없음. 높이 자료 없는 작은 바위는 0.5m",
+  "packed": "terrain/height.i16z"
+ },
+ "ortho": {
+  "url": "terrain/ortho.jpg",
+  "minE": 276400,
+  "minN": 515750,
+  "maxE": 277470,
+  "maxN": 516890,
+  "width": 2675,
+  "height": 2850,
+  "source": "국토지리정보원 정사영상 37116005, 2025 촬영(원본 25cm, 앱은 40cm로 줄임)",
+  "license": "국토지리정보원 국토정보플랫폼, 교육용(비영리)",
+  "georef": "원본 TIF 에 좌표가 없어 EPSG:5186(중부원점) 0.25m 격자로 보고 해안선에 맞춰 원점을 찾은 뒤 EPSG:5188 로 옮김(tools/ngii/register_crs.py·make_ortho.py)",
+  "lod": {
+   "low": "terrain/ortho-1k.jpg",
+   "mid": "terrain/ortho-2k.jpg",
+   "high": "terrain/ortho.jpg"
+  }
+ },
+ "coastline": {
+  "url": "terrain/coast.json",
+  "source": "국토지리정보원 1:5,000 수치지형도 37116005(2025) 섬 경계(N3A_G0010000)",
+  "rings": 91
+ },
+ "underslope": {
+  "url": "terrain/underslope.f32",
+  "cols": 601,
+  "rows": 601,
+  "minE": 275500,
+  "maxN": 517600,
+  "cell": 5,
+  "what": "섬의 물속 사면(이어 그린 모양, 실측 아님)",
+  "source": "해안선(국토지리정보원 1:5,000 수치지형도 37116005, 0m)과 가장 가까운 실측 수심(국립해양조사원 BADA2024, 150m 간격) 사이를 매끈하게 이어 그린 모양. 섬 바로 둘레 얕은 바다는 실측 자료가 없어 실제 바닥 모양과 다릅니다",
+  "made": "tools/underslope.mjs: 5m 격자, 땅 0m·BADA2024 칸 고정, 빈 칸은 라플라스(이웃 평균) 풀이",
+  "packed": "terrain/underslope.i16z"
+ },
+ "gltf": {
+  "originE": 277000,
+  "originN": 516100,
+  "embeddedMaterials": true,
+  "keepMeasuredIslets": true,
+  "replaceCoastRings": [
+   0,
+   1
+  ],
+  "preciseSurface": true,
+  "lod": {
+   "low": [
+    "terrain/hybrid/seodo-low.glb",
+    "terrain/hybrid/dongdo-low.glb"
+   ],
+   "mid": [
+    "terrain/hybrid/seodo-mid.glb",
+    "terrain/hybrid/dongdo-mid.glb"
+   ],
+   "high": [
+    "terrain/hybrid/seodo-high.glb",
+    "terrain/hybrid/dongdo-high.glb"
+   ]
+  },
+  "url": [
+   "terrain/hybrid/seodo-high.glb",
+   "terrain/hybrid/dongdo-high.glb"
+  ]
+ },
+ "reconstruction": {
+  "name": "실측 중심 재구성",
+  "geometry": "국토지리정보원 원 수치지형도 삼각망을 바탕으로 재구성. 낮은 품질은 면 수를 줄인 표현",
+  "appearance": "기관 사진·정사영상·GPT 입력·Tripo 일부 색 정보를 참고한 표면 표현. 정밀 암벽 스캔이나 각 절리의 실제 위치 재현이 아님",
+  "inferred": "수중 사면은 이어 그린 표현이며 동굴 내부는 재현하지 않음",
+  "collision": "현재 화면 품질 GLB의 실제 상부 삼각면을 직접 조회. 동굴 속 빈 공간을 나타내는 3차원 충돌체는 아님"
+ }
+}

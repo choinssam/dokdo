@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "releases": [
+    {
+      "id": "5d87e539d13e0c3a47e153d65145fd61be950756f4a1a3e28ddb8e29725d91ee",
+      "files": {
+        "assets/GLTFLoader-DGLZqzbk.js": {
+          "sha256": "ee4131ba1caecfc99f7cbe45b34c24d9b5a87e8e88447c4f36b43fa4ed20b24e",
+          "size": 44891
+        },
+        "assets/SkeletonUtils-CuRFEry0.js": {
+          "sha256": "4cbd841f652789be5b4b5ba01b84a0561773bd39075a512e8192db3a20353675",
+          "size": 458
+        },
+        "assets/index-C-AYK_CJ.css": {
+          "sha256": "cc1bacbca24914d5fbfd14c6e3a289da180945025aa1bf575485f93116ca14eb",
+          "size": 111147
+        },
+        "assets/index-Da28W5ch.js": {
+          "sha256": "c12970a097903d3a7c8fa4b73d504f066525c8fdf9864efff4f273b82479b79e",
+          "size": 1306576
+        },
+        "assets/meshopt_decoder.module-CkuQsJa_.js": {
+          "sha256": "8369818dd03e1db2662d1cc2b939cb546f8977515e8279ddd7f7a7564a8a2fbc",
+          "size": 22406
+        }
+      }
+    },
+    {
+      "id": "5545a26044d861ab04b5b54b9de9bc75ca0f6666240f6d39da69cac0692584a6",
+      "files": {
+        "assets/GLTFLoader-CWEKG0I8.js": {
+          "sha256": "7c8ac22fe18469f8c7d79a68b1d248e05a2c9d91f6881fe3a9fa8cb39da7c855",
+          "size": 44891
+        },
+        "assets/SkeletonUtils-CuRFEry0.js": {
+          "sha256": "4cbd841f652789be5b4b5ba01b84a0561773bd39075a512e8192db3a20353675",
+          "size": 458
+        },
+        "assets/index-BBFk3oTR.js": {
+          "sha256": "2d20a0f2ca517b526450b3dddbb33d5471f622192f43aeffb775e70c30cd008e",
+          "size": 1303466
+        },
+        "assets/index-C-AYK_CJ.css": {
+          "sha256": "cc1bacbca24914d5fbfd14c6e3a289da180945025aa1bf575485f93116ca14eb",
+          "size": 111147
+        },
+        "assets/meshopt_decoder.module-CkuQsJa_.js": {
+          "sha256": "8369818dd03e1db2662d1cc2b939cb546f8977515e8279ddd7f7a7564a8a2fbc",
+          "size": 22406
+        }
+      }
+    }
+  ],
+  "bytes": {
+    "before": 1485478,
+    "after": 2833835,
+    "limit": 33554432
+  }
+}

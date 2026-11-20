@@ -1,0 +1,85 @@
+{
+  "schema": 1,
+  "releases": [
+    {
+      "id": "bf3842f29dae2231d96f2b9bd93e25d7943240e4f060e16ae3cd11dc8cafc59e",
+      "files": {
+        "assets/GLTFLoader-DRbR6lpe.js": {
+          "sha256": "b46c4323217fffaa5e615e3bc065b89bc1e03a4c87b5ee49108728523bdec9ad",
+          "size": 44891
+        },
+        "assets/SkeletonUtils-CuRFEry0.js": {
+          "sha256": "4cbd841f652789be5b4b5ba01b84a0561773bd39075a512e8192db3a20353675",
+          "size": 458
+        },
+        "assets/index-C-AYK_CJ.css": {
+          "sha256": "cc1bacbca24914d5fbfd14c6e3a289da180945025aa1bf575485f93116ca14eb",
+          "size": 111147
+        },
+        "assets/index-DE45VmlQ.js": {
+          "sha256": "5c86a63ddb1e2533f07ff04cade4750cd534b05f55abc2244597552a3b2e193c",
+          "size": 1308311
+        },
+        "assets/meshopt_decoder.module-CkuQsJa_.js": {
+          "sha256": "8369818dd03e1db2662d1cc2b939cb546f8977515e8279ddd7f7a7564a8a2fbc",
+          "size": 22406
+        }
+      }
+    },
+    {
+      "id": "b94d5850ae5a1975a5bc9030022a7aa5a17799f736bfce9000101bfce5bc105c",
+      "files": {
+        "assets/GLTFLoader-_Pcq_X9f.js": {
+          "sha256": "54be52d9121bc705f67ceddd71f1b4117fd8f2c5e3269632c1f2d34f5587a6f7",
+          "size": 44891
+        },
+        "assets/SkeletonUtils-CuRFEry0.js": {
+          "sha256": "4cbd841f652789be5b4b5ba01b84a0561773bd39075a512e8192db3a20353675",
+          "size": 458
+        },
+        "assets/index-C-AYK_CJ.css": {
+          "sha256": "cc1bacbca24914d5fbfd14c6e3a289da180945025aa1bf575485f93116ca14eb",
+          "size": 111147
+        },
+        "assets/index-D59vNdJy.js": {
+          "sha256": "93fbbed4ce9c562e8f1a3293464fe2235f26be1c5dd89a8037c9dfc5c78d0b68",
+          "size": 1307267
+        },
+        "assets/meshopt_decoder.module-CkuQsJa_.js": {
+          "sha256": "8369818dd03e1db2662d1cc2b939cb546f8977515e8279ddd7f7a7564a8a2fbc",
+          "size": 22406
+        }
+      }
+    },
+    {
+      "id": "5545a26044d861ab04b5b54b9de9bc75ca0f6666240f6d39da69cac0692584a6",
+      "files": {
+        "assets/GLTFLoader-CWEKG0I8.js": {
+          "sha256": "7c8ac22fe18469f8c7d79a68b1d248e05a2c9d91f6881fe3a9fa8cb39da7c855",
+          "size": 44891
+        },
+        "assets/SkeletonUtils-CuRFEry0.js": {
+          "sha256": "4cbd841f652789be5b4b5ba01b84a0561773bd39075a512e8192db3a20353675",
+          "size": 458
+        },
+        "assets/index-BBFk3oTR.js": {
+          "sha256": "2d20a0f2ca517b526450b3dddbb33d5471f622192f43aeffb775e70c30cd008e",
+          "size": 1303466
+        },
+        "assets/index-C-AYK_CJ.css": {
+          "sha256": "cc1bacbca24914d5fbfd14c6e3a289da180945025aa1bf575485f93116ca14eb",
+          "size": 111147
+        },
+        "assets/meshopt_decoder.module-CkuQsJa_.js": {
+          "sha256": "8369818dd03e1db2662d1cc2b939cb546f8977515e8279ddd7f7a7564a8a2fbc",
+          "size": 22406
+        }
+      }
+    }
+  ],
+  "bytes": {
+    "before": 1487213,
+    "after": 4187728,
+    "limit": 33554432
+  }
+}

@@ -1,0 +1,63 @@
+{
+ "made": "tools/photo-tex/bake.mjs",
+ "what": "섬 옆면 사진 텍스처. 서도·동도마다 섬 가운데에서 본 방위(가로, u = (atan2(N - cN, E - cE) + π) / 2π)와 높이(세로)로 편 그림. 알파 = 사진이 닿은 정도",
+ "source": "옆면: 해외문화홍보원·국방부 사진(CC BY-SA 2.0)을 실측 지형에 입힘",
+ "photos": [
+  {
+   "id": "ymc",
+   "credit": "국방부(대한민국 국군) 2015, 양만춘함 독도 해상기동, CC BY-SA 2.0",
+   "file": "양만춘함 독도 해상기동 (20105835904).jpg",
+   "upscaled": false
+  },
+  {
+   "id": "nne",
+   "credit": "해외문화홍보원(KOCIS) 2010, CC BY-SA 2.0",
+   "file": "KOCIS Dokdo Islands (4925991582).jpg",
+   "upscaled": true
+  },
+  {
+   "id": "nne2",
+   "credit": "해외문화홍보원(KOCIS) 2010, CC BY-SA 2.0",
+   "file": "KOCIS Dokdo Islands (4925397717).jpg",
+   "upscaled": true
+  },
+  {
+   "id": "dongdo-s",
+   "credit": "해외문화홍보원(KOCIS) 2010, CC BY-SA 2.0",
+   "file": "KOCIS Dokdo Islands (4925397371).jpg",
+   "upscaled": true
+  }
+ ],
+ "isles": [
+  {
+   "id": 1,
+   "name": "서도",
+   "cE": 276734.7,
+   "cN": 516198,
+   "zmin": 0,
+   "zmax": 169,
+   "v0": 0.38209,
+   "v1": 0.98806
+  },
+  {
+   "id": 2,
+   "name": "동도",
+   "cE": 277157.3,
+   "cN": 515990,
+   "zmin": 0,
+   "zmax": 100,
+   "v0": 0.01194,
+   "v1": 0.370149
+  }
+ ],
+ "lod": {
+  "low": "textures/side-1024.webp",
+  "mid": "textures/side-2048.webp",
+  "high": "textures/side-4096.webp"
+ },
+ "bytes": {
+  "low": 29478,
+  "mid": 79186,
+  "high": 168792
+ }
+}

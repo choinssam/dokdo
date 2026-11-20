@@ -1,0 +1,29 @@
+{
+ "mean": [
+  0.4958,
+  0.4165,
+  0.3501
+ ],
+ "sizes": {
+  "rock-256": 19060,
+  "rock-n-256": 26508,
+  "rock-512": 91522,
+  "rock-n-512": 141932
+ },
+ "source": "Codex(gpt-image) 업스케일. 참고 사진: 해외문화홍보원 「Koreanet Honorary Reporters Dokdo 01」(2016-09-25, CC BY-SA 2.0, Wikimedia Commons) 서도 절벽",
+ "made": "tools/cliff-tex/make.mjs",
+ "lod": {
+  "low": [
+   "textures/rock-256.webp",
+   "textures/rock-n-256.webp"
+  ],
+  "mid": [
+   "textures/rock-512.webp",
+   "textures/rock-n-256.webp"
+  ],
+  "high": [
+   "textures/rock-512.webp",
+   "textures/rock-n-512.webp"
+  ]
+ }
+}

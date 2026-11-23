@@ -2,6 +2,31 @@
   "schema": 1,
   "releases": [
     {
+      "id": "c3309139ffa25593dc3d5981b3d67f5abe63bf4f0fe33b6cbccf771888278c38",
+      "files": {
+        "assets/GLTFLoader-P19LFoBc.js": {
+          "sha256": "e6d88276462a0cc052cf35f035360588ddfc33ef11e4a7c827f6ea110daa9a81",
+          "size": 44891
+        },
+        "assets/SkeletonUtils-CuRFEry0.js": {
+          "sha256": "4cbd841f652789be5b4b5ba01b84a0561773bd39075a512e8192db3a20353675",
+          "size": 458
+        },
+        "assets/index-CfUCjE-S.css": {
+          "sha256": "d7fa9843d072ff892615fbaf0077494a4319252f51f2a0093acca60e60a590ad",
+          "size": 111527
+        },
+        "assets/index-uHXcUbpm.js": {
+          "sha256": "e0c6bf4d448421f5cb430ff9f36ab226bfe760546380e91ef9bea69d0cf4793b",
+          "size": 1308806
+        },
+        "assets/meshopt_decoder.module-CkuQsJa_.js": {
+          "sha256": "8369818dd03e1db2662d1cc2b939cb546f8977515e8279ddd7f7a7564a8a2fbc",
+          "size": 22406
+        }
+      }
+    },
+    {
       "id": "bf3842f29dae2231d96f2b9bd93e25d7943240e4f060e16ae3cd11dc8cafc59e",
       "files": {
         "assets/GLTFLoader-DRbR6lpe.js": {
@@ -50,36 +75,11 @@
           "size": 22406
         }
       }
-    },
-    {
-      "id": "5545a26044d861ab04b5b54b9de9bc75ca0f6666240f6d39da69cac0692584a6",
-      "files": {
-        "assets/GLTFLoader-CWEKG0I8.js": {
-          "sha256": "7c8ac22fe18469f8c7d79a68b1d248e05a2c9d91f6881fe3a9fa8cb39da7c855",
-          "size": 44891
-        },
-        "assets/SkeletonUtils-CuRFEry0.js": {
-          "sha256": "4cbd841f652789be5b4b5ba01b84a0561773bd39075a512e8192db3a20353675",
-          "size": 458
-        },
-        "assets/index-BBFk3oTR.js": {
-          "sha256": "2d20a0f2ca517b526450b3dddbb33d5471f622192f43aeffb775e70c30cd008e",
-          "size": 1303466
-        },
-        "assets/index-C-AYK_CJ.css": {
-          "sha256": "cc1bacbca24914d5fbfd14c6e3a289da180945025aa1bf575485f93116ca14eb",
-          "size": 111147
-        },
-        "assets/meshopt_decoder.module-CkuQsJa_.js": {
-          "sha256": "8369818dd03e1db2662d1cc2b939cb546f8977515e8279ddd7f7a7564a8a2fbc",
-          "size": 22406
-        }
-      }
     }
   ],
   "bytes": {
-    "before": 1487213,
-    "after": 4187728,
+    "before": 1488088,
+    "after": 4304595,
     "limit": 33554432
   }
 }
